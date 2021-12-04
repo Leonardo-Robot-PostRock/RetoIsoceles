@@ -1,6 +1,6 @@
-# RetoIsoceles
----
->Es una tarea donde debo solucionar un problema algoritmico
+# RetoIsósceles
+>Es una tarea donde debo solucionar un problema algoritmico.
+
 >Durante este taller aprendimos a calcular el área y perímetro de un triángulo conociendo la longitud de sus 3 lados y también su altura.
 
 >En este ejercicio debes crear una función para calcular la altura de un triángulo isósceles.
