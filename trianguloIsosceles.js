@@ -4,18 +4,19 @@ function alturaTrianguloIsosceles(ladoUno, ladoDos, ladoTres) {
     if (ladoUno === ladoDos && ladoUno != ladoTres && ladoDos != ladoTres) {
         altura = Math.sqrt(ladoUno ** 2 - (ladoTres / 2) ** 2);
         console.log("Es un triángulo Isósceles: ");
-        return altura;
+        return "La altura del triángulo isósceles es: " + altura;
     } else if (ladoUno === ladoTres && ladoUno != ladoDos && ladoTres != ladoDos) {
         altura = Math.sqrt(ladoUno ** 2 - ((ladoDos / 2) ** 2));
         console.log("Es un triángulo Isósceles: ");
-        return altura;
+        return "La altura del triángulo isósceles es: " + altura;
     } else if (ladoDos === ladoTres && ladoDos != ladoUno && ladoTres != ladoUno) {
         altura = Math.sqrt(ladoDos ** 2 - (ladoUno / 2) ** 2);
         console.log("Es un triángulo Isósceles: ");
-        return altura;
+        return "La altura del triángulo isósceles es: " + altura;
     }
     else {
         console.log("No es un triángulo Isósceles")
+        return "No es un triángulo Isósceles"
     }
 }
 
@@ -28,4 +29,6 @@ function calculoIsosceles() {
     const valueUno = Number(inputUno.value);
     const valueDos = Number(inputDos.value);
     const valueTres = Number(inputTres.value);
+    const altura = alturaTrianguloIsosceles(valueUno, valueDos, valueTres);
+    alert(altura);
 }
